@@ -49,7 +49,6 @@ def model():
         submitted_data = train_form.data
         print submitted_data
 
-
         #Retrieve values from form
         n_neighb = submitted_data['n_neighb']
         param_2  = submitted_data['param_2']
@@ -117,9 +116,9 @@ def model():
 
 
     return render_template('model.html',
-                            predict_form=predict_form, 
-                            train_form = train_form, 
-                            prediction=prediction)
+                            predict_form = predict_form, 
+                            train_form   = train_form, 
+                            prediction   = prediction)
 
 
 #Handle Bad Requests
