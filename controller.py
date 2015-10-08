@@ -72,7 +72,7 @@ def model():
         ############
         # Pickling #
         ############
-        with open('model/my_model.pkl', 'wb') as f:           
+        with open('ml/my_model.pkl', 'wb') as f:           
             pickle.dump(knn, f)
 
         print "Trained" # output to tell us we are done
@@ -99,7 +99,7 @@ def model():
         flower_instance = [sepal_length, sepal_width, petal_length, petal_width]
 
         # unpickle my model
-        knn = pickle.load(open('model/my_model.pkl'))
+        knn = pickle.load(open('ml/my_model.pkl'))
 
         # the machine learning part!!!
         my_prediction = knn.predict(flower_instance)
