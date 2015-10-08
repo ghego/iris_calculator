@@ -95,7 +95,7 @@ def model():
         petal_width  = submitted_data['petal_width']
         # notice I'm using the same names I used in my PredictForm class up there!!!! On line 20
 
-        #Create array from values
+        #Create list from values
         flower_instance = [sepal_length, sepal_width, petal_length, petal_width]
 
         # unpickle my model
